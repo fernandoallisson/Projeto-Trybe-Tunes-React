@@ -38,6 +38,7 @@ function Album() {
       <p data-testid="album-name">{albumName}</p>
       {musics.map((music) => (
         <MusicCard
+          trackId={ music.trackId }
           key={ music.trackId }
           trackName={ music.trackName }
           previewUrl={ music.previewUrl }
